@@ -73,15 +73,15 @@ header nav {
     transition: right 0.3s ease; 
 }
 
-.cross .bar:nth-child(2){
+.cross .line:nth-child(2){
     opacity: 0;
 }
 
-.cross .bar:first-child{
+.cross .line:first-child{
     transform: rotate(-45deg) translate(-5px, 7px);
 }
 
-.cross .bar:last-child{
+.cross .line:last-child{
     transform: rotate(45deg) translate(-5px, -7px);
 }
 header nav a, .log-reg-btns a {
