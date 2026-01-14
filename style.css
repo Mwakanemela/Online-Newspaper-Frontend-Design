@@ -1,0 +1,68 @@
+/* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: rgb(209, 208, 206);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+/* END OF CSS RESET*/
+
+/* HAMBURGER MENU */
+.menu {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.menu .line {
+    height: .3em;
+    width: 2em;
+    background-color: #000014;
+    border-radius: 100em;
+}
+
+.menu .line:not(:last-of-type) {
+    margin-bottom: .25em;
+}
+
+/* END OF HAMBURGER MENU DESIGN */
+
+/* HEADER FOR SMALL SCREENS */
+header nav, .log-reg-btns {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    width: min(75em, 100% - 2em);
+    margin-inline: auto;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+header h1 span {
+    color: #7373d1;
+}
