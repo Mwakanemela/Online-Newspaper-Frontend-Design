@@ -48,13 +48,58 @@ button {
 
 /* HEADER FOR SMALL SCREENS */
 header nav, .log-reg-btns {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+header nav {
+    position: absolute;
+    width: 60%;
+    margin-top: 5em;
+    background-color: #7373d1;
+    left: -100%;
+    transition: left 0.3s ease;
+    height: 100vh;
 }
 
+.log-reg-btns {
+    position: absolute;
+    margin-top: 5em;
+    right: 0;
+    background-color: #7373d1;
+    width: 35%;
+    margin-right: 0.5em;
+    right: -100%;
+    transition: right 0.3s ease; 
+}
+
+.cross .bar:nth-child(2){
+    opacity: 0;
+}
+
+.cross .bar:first-child{
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
+
+.cross .bar:last-child{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+header nav a, .log-reg-btns a {
+    margin: 2em;
+}
 header {
     display: flex;
     justify-content: space-between;
 }
+
+.nav-slide-in {
+    left: 0;
+}
+
+.log-slide-in {
+    right: 0;
+}
+
 .wrapper {
     width: min(75em, 100% - 2em);
     margin-inline: auto;
