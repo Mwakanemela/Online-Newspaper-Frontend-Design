@@ -89,4 +89,14 @@ header .wrapper .log-reg-btns {
     .menu {
         display: block;
     }
+
+    .content .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+    }
 }
