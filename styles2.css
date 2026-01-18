@@ -80,7 +80,35 @@ header .wrapper .log-reg-btns {
     color: #0D38F8;
 }
 
-@media (max-width: 1000px) {
+/* HERO SECTION STYLING */
+.hero {
+    margin-top: 3rem;
+}
+.hero .wrapper h2 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+}
+.hero .wrapper p {
+    color: gray;
+    text-align: center;
+}
+.hero .wrapper .search-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero .wrapper .search-input input {
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid rgb(128, 124, 124);
+    padding: 0.5rem;
+    width: 50%;
+}
+/* END OF HERO SECTION STYLING */
+@media (max-width: 900px) {
 
     header .wrapper nav, header .wrapper .log-reg-btns {
         display: none;
@@ -98,5 +126,9 @@ header .wrapper .log-reg-btns {
     .content {
         display: flex;
         justify-content: space-around;
+    }
+
+    .hero .wrapper h2 {
+        font-size: 2em;
     }
 }
