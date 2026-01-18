@@ -1,0 +1,39 @@
+/* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: rgb(209, 208, 206);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+/* END OF CSS RESET*/
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper {
+    width: min(75em, 100% - 2em);
+    margin-inline: auto;
+}
+.menu {
+    display: none;
+}

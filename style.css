@@ -52,7 +52,7 @@ header .wrapper nav, .log-reg-btns {
     flex-direction: column;
     
 }
-header .wrapper nav {
+header nav {
     position: absolute;
     width: 60%;
     margin-top: 5em;
@@ -88,7 +88,6 @@ header nav a, .log-reg-btns a {
     margin: 2em;
 }
 header {
-    
     position: fixed;
     top: 0;
     background-color: #595966;
@@ -116,4 +115,19 @@ header .wrapper h1 {
 }
 header .wrapper h1 span {
     color: #7373d1;
+}
+
+@media (min-width: 50em) { 
+    header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper {
+    width: min(75em, 100% - 2em);
+    margin-inline: auto;
+}
+.menu {
+    display: none;
+}
 }
