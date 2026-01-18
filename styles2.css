@@ -131,4 +131,8 @@ header .wrapper .log-reg-btns {
     .hero .wrapper h2 {
         font-size: 2em;
     }
+
+    .hero .wrapper .search-input input {
+        font-size: 1em;
+    }
 }
