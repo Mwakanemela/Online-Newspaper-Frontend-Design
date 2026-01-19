@@ -144,6 +144,13 @@ main .wrapper .latest-news-container .latest-news-wrapper .latest-news {
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: #FFFFFF;
+}
+main .wrapper .latest-news-container .latest-news-wrapper .latest-news::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* covers entire container */
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
 }
 
 
