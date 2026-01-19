@@ -248,3 +248,13 @@ main .wrapper .past-mixed-news-container .past-news-container .past-news .image 
     }
     
 }
+
+@media (max-width: 400px) { 
+    main .wrapper .latest-news-container{
+        flex: 1;
+    }
+
+    main .wrapper .past-mixed-news-container {
+        flex: 1;
+    }
+}
