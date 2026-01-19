@@ -44,6 +44,13 @@ header .wrapper {
     display: none;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #a89d9d;
+    z-index: 20;
+}
 header .wrapper h1 {
     font-size: 2em;
 }
@@ -87,7 +94,7 @@ header .wrapper .log-reg-btns {
 
 /* HERO SECTION STYLING */
 .hero {
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 .hero .wrapper h2 {
     text-align: center;
