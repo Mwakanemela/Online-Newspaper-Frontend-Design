@@ -251,10 +251,14 @@ main .wrapper .past-mixed-news-container .past-news-container .past-news .image 
 
 @media (max-width: 400px) { 
     main .wrapper .latest-news-container{
-        flex: 1;
+        flex: 10%;
     }
 
     main .wrapper .past-mixed-news-container {
-        flex: 1;
+        flex: 50%;
+    }
+    main .wrapper .latest-news-container .latest-news-wrapper .latest-news {
+        width: 185px;
+        height: 250px;
     }
 }
