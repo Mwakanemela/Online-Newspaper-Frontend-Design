@@ -24,6 +24,11 @@ button {
     font: inherit;
     cursor: pointer;
 }
+
+img {
+    width: 100%;
+
+}
 /* END OF CSS RESET*/
 header .wrapper {
     display: flex;
@@ -108,6 +113,63 @@ header .wrapper .log-reg-btns {
     width: 50%;
 }
 /* END OF HERO SECTION STYLING */
+
+/* MAIN SECTION */
+main .wrapper {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+
+main .wrapper .latest-news-container{
+    /* background-color: gray; */
+    flex: 1;
+}
+
+main .wrapper .latest-news-container h2 {
+    font-size: 1.2em;
+    font-family: sans-serif;
+}
+
+main .wrapper .latest-news-container .latest-news-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main .wrapper .latest-news-container .latest-news-wrapper .latest-news {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+main .wrapper .latest-news-container .latest-news-wrapper .latest-news:hover {
+    transform: scale(1.00987);
+}
+main .wrapper .latest-news-container .latest-news-wrapper .latest-news img{ 
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+ }
+main .wrapper .latest-news-container .latest-news-wrapper .latest-news .news-content{ 
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-30%, -40%);
+    border-radius: 10px;
+}
+
+main .wrapper .latest-news-container .latest-news-wrapper .latest-news .news-content a{ 
+    background-color: rgb(41, 40, 40);
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+}
+/* END OF MAIN SECTION */
 @media (max-width: 900px) {
 
     header .wrapper nav, header .wrapper .log-reg-btns {
